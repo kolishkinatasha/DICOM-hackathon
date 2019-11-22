@@ -1,0 +1,88 @@
+.main {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+h1 {
+    position: absolute;
+    width: 580px;
+    height: 163px;
+    left: 128px;
+    top: 10%;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 200px;
+
+    color: #000000;
+}
+
+#fileInput {
+    position: absolute;
+    width: 300px;
+    height: 43px;
+    left: 128px;
+    top: 372px;
+    display: none;
+    z-index: 1; 
+    background: rgba(40, 52, 66, 0.22);
+    border-radius: 9px;
+    outline: none;
+}
+
+.buttons {
+    position: relative;
+    margin-top: 370px;
+    margin-left: 130px;
+}
+
+button {
+    width: 165px;
+    height: 42px;
+
+    display: inline-block;
+    border: none;
+    margin: 3px;
+    background: #237DE8;
+    border-radius: 9px;   
+    color: #ffffff; 
+}
+
+img {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    z-index: -10;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
