@@ -44,10 +44,27 @@ button {
 
     display: inline-block;
     border: none;
-    margin: 3px;
+    margin: 2px;
+    margin-top: 10px;
     background: #237DE8;
     border-radius: 9px;   
     color: #ffffff; 
+}
+
+.buttonlink {
+        width: 165px;
+        height: 42px;
+    
+        display: inline-block;
+        border: none;
+        margin: 2px;
+        margin-top: 0px;
+        background: #237DE8;
+        border-radius: 9px;   
+        color: #ffffff; 
+        outline: none;
+        font-family: Fira Sans;
+        text-align: center;
 }
 
 img {
@@ -58,7 +75,7 @@ img {
     z-index: -10;
 }
 
-.inputfile {
+ .inputfile {
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
@@ -67,22 +84,44 @@ img {
 	z-index: -1;
 }
 
-.inputfile + label {
-    font-size: 1.25em;
-    font-weight: 700;
-    color: white;
-    background-color: black;
-    display: inline-block;
-}
-.inputfile:focus + label,
-.inputfile + label:hover {
-    background-color: red;
-}
-.inputfile + label {
-	cursor: pointer; /* "hand" cursor */
+h2 {
+    position: absolute;
+    width: 580px;
+    height: 69px;
+    left: 59px;
+    top: 22px;
+
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 64px;
+
+    color: #000000;
 }
 
-.inputfile:focus + label {
-	outline: 1px dotted #000;
-	outline: -webkit-focus-ring-color auto 5px;
+.descr {
+    position: absolute;
+    margin-top: 100px;
+    width: 50%;
+    height: 500px;
+    border: 1px solid black;
+}
+.img {
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 100px;
+    width: 40%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.center {
+    position: absolute;
+    margin-left: 270px;
+    text-align: center;
+    width: 30%;
+    height: 500px;
+    /* border: 1px solid red; */
+
 }
